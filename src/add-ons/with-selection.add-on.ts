@@ -13,7 +13,7 @@ import arrayHasItems from '../utils/array-has-items';
 export interface IWithSelectionOptions<Data extends object = any> extends UseRowSelectOptions<Data> {
   onSelectionChange?: SelectSetter<Data>;
 
-  // react-table state override https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#useRowSelect
+  // react-table state override https://react-table.js.org/api/useRowSelect
   selectedRowIds?: {[id: string]: boolean};
 }
 

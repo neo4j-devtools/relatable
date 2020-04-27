@@ -20,7 +20,7 @@ export interface IWithGroupingOptions<Data extends object = any> extends UseGrou
   defaultAggregateCell?: React.FC<ICellProps>;
   onGroupChange?: GroupSetter<Data>;
 
-  // react-table state override https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#useGroupBy
+  // react-table state override https://react-table.js.org/api/useGroupBy
   groupBy?: IdType<Data>[];
 }
 

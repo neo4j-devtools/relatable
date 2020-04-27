@@ -2,7 +2,7 @@ Relate by UI - Relatable
 --------------------
 This package is part of the [Relate by UI Kit](http://neo4j-apps.github.io/relate-by-ui), an opiniated collection of components and styles based on Semantic UI.
 
-This package provides an abstraction over the [react-table API](https://github.com/tannerlinsley/react-table/blob/master/docs/api.md) to facilitate creating performant data tables.
+This package provides an abstraction over the [react-table API](https://react-table.js.org/api) to facilitate creating performant data tables.
 
 ---
 
@@ -20,7 +20,7 @@ This package provides an abstraction over the [react-table API](https://github.c
 import React from 'react';
 import Relatable from '@relate-by-ui/relatable';
 
-// see https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#usetable
+// see https://react-table.js.org/api/usetable
 const COLUMNS = []
 const DATA = []
 
@@ -32,7 +32,7 @@ const ATable = () => <Relatable columns={COLUMNS} data={DATA}/>
 import React from 'react';
 import Relatable, {Table, Toolbar, Pagination} from '@relate-by-ui/relatable';
 
-// see https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#usetable
+// see https://react-table.js.org/api/usetable
 const COLUMNS = []
 const DATA = []
 
@@ -72,7 +72,7 @@ import {
 } from '@relate-by-ui/relatable'
 
 export interface IRelatableProps {
-  // see https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#usetable
+  // see https://react-table.js.org/api/usetable
   columns: any[];
   data: any[];
   defaultColumn?: any;
@@ -156,7 +156,7 @@ function Toolbar(props: React.PropsWithChildren<MenuProps> = {}): JSX.Element;
 import React from 'react';
 import Relatable, {Table, Toolbar} from '@relate-by-ui/relatable';
 
-// see https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#usetable
+// see https://react-table.js.org/api/usetable
 const COLUMNS = []
 const DATA = []
 
@@ -173,7 +173,7 @@ const ATable = () => (
 import React from 'react';
 import Relatable, {Table, Toolbar, FilterableToolbar, GroupableToolbar} from '@relate-by-ui/relatable';
 
-// see https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#usetable
+// see https://react-table.js.org/api/usetable
 const COLUMNS = []
 const DATA = []
 
@@ -259,10 +259,10 @@ There are currently six add-ons available:
 4. [Paginated](#paginated)
 5. [Selectable](#selectable)
 
-Please note that add-ons are ordinal, as defined by the [react-table API](https://github.com/tannerlinsley/react-table/blob/master/docs/api.md), and subject to the [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html).
+Please note that add-ons are ordinal, as defined by the [react-table API](https://react-table.js.org/api//blob/master/docs/api.md), and subject to the [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html).
 
 ### Filterable
-[react-table hook](https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#useFilters)
+[react-table hook](https://react-table.js.org/api/useFilters)
 
 [Source](./src/add-ons/with-filters.add-on.ts)
 
@@ -278,7 +278,7 @@ export interface IWithFiltersOptions<Data extends object = any> extends UseFilte
   defaultFilterFunc?: FilterFunc<Data>;
   onFilterChange?: FilterSetter<Data>;
 
-  // react-table state override https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#useFilters
+  // react-table state override https://react-table.js.org/api/useFilters
   filters?: {id: IdType<Data>, value: any}[];
 }
 ```
@@ -297,7 +297,7 @@ const FilterableTable = () => <Relatable
 ```
 
 ### Groupable
-[react-table hook](https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#useGroupBy)
+[react-table hook](https://react-table.js.org/api/useGroupBy)
 
 [Source](./src/add-ons/with-grouping.add-on.ts)
 
@@ -313,7 +313,7 @@ export interface IWithGroupingOptions<Data extends object = any> extends UseGrou
   defaultAggregateCell?: React.FC<ICellProps>;
   onGroupChange?: GroupSetter<Data>;
 
-  // react-table state override https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#useGroupBy
+  // react-table state override https://react-table.js.org/api/useGroupBy
   groupBy?: IdType<Data>[];
 }
 ```
@@ -332,7 +332,7 @@ const GroupableTable = () => <Relatable
 ```
 
 ### Sortable
-[react-table hook](https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#useSortBy)
+[react-table hook](https://react-table.js.org/api/useSortBy)
 
 [Source](./src/add-ons/with-sorting.add-on.ts)
 
@@ -346,7 +346,7 @@ import {SortSetter} from '@relate-by-ui/relatable';
 export interface IWithSortingOptions<Data extends object = any> extends UseSortByOptions<Data> {
   onSortChange?: SortSetter<Data>;
 
-  // react-table state override https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#useSortBy
+  // react-table state override https://react-table.js.org/api/useSortBy
   sortBy?: SortingRule<Data>[];
 }
 ```
@@ -364,7 +364,7 @@ const SortableTable = () => <Relatable
 ```
 
 ### Expandable
-[react-table hook](https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#useExpanded)
+[react-table hook](https://react-table.js.org/api/useExpanded)
 
 [Source](./src/add-ons/with-expanded.add-on.ts)
 
@@ -379,7 +379,7 @@ export interface IWithExpandedOptions<Data extends object = any> extends UseExpa
   onExpandedChange?: ExpandSetter<Data>;
   expandedRowComponent?: React.FC<IRowProps>;
 
-  // react-table state override https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#useExpanded
+  // react-table state override https://react-table.js.org/api/useExpanded
   expanded?: IdType<Data>[];
 }
 ```
@@ -397,7 +397,7 @@ const ExpandableTable = () => <Relatable
 ```
 
 ### Paginated
-[react-table hook](https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#usePagination)
+[react-table hook](https://react-table.js.org/api/usePagination)
 
 [Source](./src/add-ons/with-pagination.add-on.ts)
 
@@ -413,7 +413,7 @@ export interface IWithPaginationOptions<Data extends object = any> extends UsePa
   onPageSizeChange?: PageSizeSetter;
   pageSizeOptions?: number[];
 
-  // react-table state overrides https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#usePagination
+  // react-table state overrides https://react-table.js.org/api/usePagination
   pageSize?: number;
   pageIndex?: number;
 }
@@ -432,7 +432,7 @@ const PaginatedTable = () => <Relatable
 ```
 
 ### Selectable
-[react-table hook](https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#useRowSelect)
+[react-table hook](https://react-table.js.org/api/useRowSelect)
 
 [Source](./src/add-ons/with-selection.add-on.ts)
 
@@ -446,7 +446,7 @@ import { SelectSetter } from '@relate-by-ui/relatable';
 export interface IWithSelectionOptions<Data extends object = any> extends UseRowSelectOptions<Data> {
   onSelectionChange?: SelectSetter<Data>;
 
-  // react-table state override https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#useRowSelect
+  // react-table state override https://react-table.js.org/api/useRowSelect
   selectedRowPaths?: {[id: string]: boolean};
 }
 ```
@@ -468,7 +468,7 @@ const SelectableTable = () => <Relatable
 ## Further Enhancements
 
 ### Cell Renderers
-The react-table API allows you to specify custom [Cells](https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#column-options), [Aggregates](https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#column-options-3), and [Filters](https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#column-options-2) for columns.
+The react-table API allows you to specify custom [Cells](https://react-table.js.org/api/column-options), [Aggregates](https://react-table.js.org/api/column-options-3), and [Filters](https://react-table.js.org/api/column-options-2) for columns.
 As a courtesy this library provides some standard components for this purpose.
 You can create your own simply by copying the implementation.
 

@@ -11,7 +11,7 @@ export interface IWithExpandedOptions<Data extends object = any> extends UseExpa
   onExpandedChange?: ExpandSetter<Data>;
   expandedRowComponent?: React.FC<IRowProps>;
 
-  // react-table state override https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#useExpanded
+  // react-table state override https://react-table.js.org/api/useExpanded
   expanded?: IdType<Data>[];
 }
 

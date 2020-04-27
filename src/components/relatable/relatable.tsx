@@ -19,7 +19,7 @@ import Pagination from '../pagination';
 import { StyleWrapper } from './relatable.styled';
 
 export interface IRelatableProps<Data extends object = any> {
-  // see https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#usetable
+  // see https://react-table.js.org/api/usetable
   columns: Column<Data>[];
   data: Data[];
   defaultColumn?: Partial<Column<Data>>;

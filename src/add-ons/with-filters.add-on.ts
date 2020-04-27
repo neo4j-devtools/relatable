@@ -22,7 +22,7 @@ export interface IWithFiltersOptions<Data extends object = any> extends UseFilte
   defaultFilterCell?: React.FC<IFilterFieldProps>;
   onFilterChange?: FilterSetter<Data>;
 
-  // react-table state override https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#useFilters
+  // react-table state override https://react-table.js.org/api/useFilters
   // with custom filter value array
   filters?: Filters<Data>[];
 }

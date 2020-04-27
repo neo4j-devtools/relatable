@@ -7,7 +7,7 @@ import { IRelatableStateInstance, SORT_ACTIONS, SortSetter, TableAddOnReturn } f
 export interface IWithSortingOptions<Data extends object = any> extends UseSortByOptions<Data> {
   onSortChange?: SortSetter<Data>;
 
-  // react-table state override https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#useSortBy
+  // react-table state override https://react-table.js.org/api/useSortBy
   sortBy?: SortingRule<Data>[];
 }
 

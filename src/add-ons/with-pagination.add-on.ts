@@ -11,7 +11,7 @@ export interface IWithPaginationOptions<Data extends object = any> extends UsePa
   onPageSizeChange?: PageSizeSetter;
   pageSizeOptions?: number[];
 
-  // react-table state overrides https://github.com/tannerlinsley/react-table/blob/master/docs/api.md#usePagination
+  // react-table state overrides https://react-table.js.org/api/usePagination
   pageSize?: number;
   pageIndex?: number;
 }
