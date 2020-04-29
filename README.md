@@ -4,6 +4,7 @@ This package is part of the [Relate by UI Kit](http://neo4j-apps.github.io/relat
 
 This package provides an abstraction over the [react-table API](https://react-table.js.org/api) to facilitate creating performant data tables.
 
+
 ---
 
 ## Table of Contents
