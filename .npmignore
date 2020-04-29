@@ -4,3 +4,7 @@ yarn.lock
 coverage
 src
 readme
+docs
+stories
+.storybook
+.idea
