@@ -22,7 +22,7 @@
   "dependencies": {
     "@emotion/core": "10.0.10",
     "@emotion/styled": "10.0.10",
-    "lodash-es": "4.17.15",
+    "lodash-es": "4.17.21",
     "react-table": "7.0.4",
     "semantic-ui-react": "0.88.2"
   },
